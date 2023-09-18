@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev --manual -c \"npm run start\" ",
-    "start": "wrangler pages dev --compatibility-date=2023-06-21 --compatibility-flags=nodejs_compat ./public",
+    "build": "remix build --compatibility-flags=\"nodejs_compat\"",
+    "dev": "remix dev --manual -c \"npm run start\"",
+    "start": "wrangler pages dev --compatibility-date=2023-06-21 --compatibility-flags=\"nodejs_compat\" ./public",
     "typecheck": "tsc",
     "lint": "eslint . --fix"
   },
